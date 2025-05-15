@@ -1,0 +1,46 @@
+basic:
+    name: 'https://www.opploans.com batch 8'
+    environments:
+        production: 'https://www.opploans.com'
+        staging: ''
+        development: ''
+    breakpoints:
+        - 640
+        - 1024
+        - 1200
+    pages:
+        - /faqs/how-will-my-loan-be-funded
+        - /faqs/how-can-i-withdraw-my-application
+        - /faqs/can-i-apply-for-and-obtain-more-than-one-loan-at-once
+        - /faqs/i-received-an-offer-in-the-mail-to-apply-for-a-loan-when-i-apply-its-asking-me-to-log-in-again-im-having-trouble-logging-in
+        - /faqs/what-benefits-do-i-get-with-the-offer-code
+        - /faqs/my-offer-code-is-not-working-from-the-offer-letter-i-received
+        - /faqs/i-tried-to-apply-at-www-opploans-com-but-it-doesnt-have-a-place-for-me-to-enter-my-promo-code
+        - /faqs/i-received-a-mailer-saying-i-was-pre-approved-does-this-mean-i-am-approved
+        - /faqs/why-do-i-need-to-submit-additional-documents-or-verification-if-i-was-told-i-was-approved
+        - /faqs/why-did-you-send-me-a-pre-approval-letter-but-deny-my-loan-request
+    monitoring:
+        days: {  }
+        type: daily
+        schedule_time: '06:30 AM'
+        schedule_time_zone: Europe/London
+        compare_with: last-production
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    isolate: ''
+    delay: 15
+    scroll: true
+    headers:
+        - { header: '', value: '' }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content: ''
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: true
