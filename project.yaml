@@ -43,7 +43,7 @@ advanced:
     custom_js: ''
     custom_css: ''
     mock_content:
-        - { selector: '', type: title }
+        - { selector: '#tp-widget-rating', type: title }
     login:
         type: none
         click_element: false
